@@ -75,12 +75,14 @@ Random Forest highlights biologically relevant predictors:
 These features are well-aligned with known pathological indicators of malignancy.
 
 # Prediction Example
+```bash
 sample = np.array([[5,10,10,10,7,7,3,8,9]])
 prediction = model.predict(sample)[0]
-
+```
 Output:
+```bash
 Prediction: Malignant
-
+```
 # Model Persistence
 
 All trained models are serialized using pickle for future inference:
